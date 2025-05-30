@@ -1,3 +1,5 @@
+1. Palindrome Check:
+
 import java.util.*;
 public class Main
 {
@@ -16,11 +18,57 @@ public class Main
 	}
 }
 
+2. Count Vowels and Consonants
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    String n=sc.nextLine();
+	    int vowels=0;
+	    int consonants=0;
+	    for(int i=0;i<n.length();i++){
+	        char ch=n.charAt(i);
+	        if(Character.isLetter(ch)){
+	             if(ch=='a'|| ch=='e' || ch=='i' || ch=='o' || ch=='u'){
+	            vowels++;
+	        }
+	        else{
+	            consonants++;
+	        }
+	    }
+	    }
+	    System.out.println("vowels"+vowels +"consonants"+consonants);
+
+		
+	}
+}
+
+3. Remove Duplicates:
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    String n=sc.nextLine();
+        StringBuilder res=new StringBuilder();
+        boolean[] seen=new boolean[26];
+        for(int i=0;i<n.length();i++){
+            char ch=n.charAt(i);
+            if(!seen[ch - 'a']){
+                seen[ch - 'a']=true;
+                res.append(ch);
+                
+            }
+        }
+		System.out.println(res.toString());
+	}
+}
 
 
-
-------------------------------------------------------------------------
-
+4. Reverse a String Using StringBuilder
 
 import java.util.*;
 public class Main
@@ -38,7 +86,8 @@ public class Main
 }
 
 
--------------------------------------------------
+5. Anagram Check:
+
 import java.util.*;
 public class Main
 {
@@ -66,63 +115,7 @@ public class Main
 	}
 }
 
-
--------------------------------------------------------------
-
-
-
-
-
-import java.util.*;
-public class Main
-{
-	public static void main(String[] args) {
-	    Scanner sc=new Scanner(System.in);
-	    String n=sc.nextLine();
-	    int vowels=0;
-	    int consonants=0;
-	    for(int i=0;i<n.length();i++){
-	        char ch=n.charAt(i);
-	        if(Character.isLetter(ch)){
-	             if(ch=='a'|| ch=='e' || ch=='i' || ch=='o' || ch=='u'){
-	            vowels++;
-	        }
-	        else{
-	            consonants++;
-	        }
-	    }
-	    }
-	    System.out.println("vowels"+vowels +"consonants"+consonants);
-
-		
-	}
-}
-
--------------------------------------------------------------------
-
-import java.util.*;
-public class Main
-{
-	public static void main(String[] args) {
-	    Scanner sc=new Scanner(System.in);
-	    String n=sc.nextLine();
-        StringBuilder res=new StringBuilder();
-        boolean[] seen=new boolean[26];
-        for(int i=0;i<n.length();i++){
-            char ch=n.charAt(i);
-            if(!seen[ch - 'a']){
-                seen[ch - 'a']=true;
-                res.append(ch);
-                
-            }
-        }
-		System.out.println(res.toString());
-	}
-}
-
------------------------------------------------------
-
-
+6. Capitalize First Letter of Each Word:
 
 public class CapitalizeWords {
     public static String capitalizeEachWord(String sentence) {
@@ -149,7 +142,7 @@ public class CapitalizeWords {
     }
 }
 
-------------------------------------------------------------------------------------------------------
+7. Count Word Occurrences:
 
 import java.util.Scanner;
 
@@ -183,7 +176,7 @@ public class WordCounter {
 }
 
 
----------------------------------------------------------------
+8. Toggle Case:
 
 import java.util.Scanner;
 
