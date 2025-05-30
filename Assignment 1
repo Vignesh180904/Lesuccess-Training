@@ -36,7 +36,7 @@ public class Main
 	}
 }
 
-Bitwise Operator Experiment:
+3.Bitwise Operator Experiment:
 
 import java.util.*;
 public class Main
