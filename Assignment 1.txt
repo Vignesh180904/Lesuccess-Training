@@ -1,0 +1,54 @@
+1. Type Conversion Challenge:
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+        float b=sc.nextFloat();
+        char c=sc.next().charAt(0);
+        float add=(float)a+b;
+        int result=(int)c+a;
+        System.out.println(add);
+        System.out.println(result);
+        
+}
+}
+
+
+2. Arithmetic Expression Evaluator:
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+        double c=sc.nextDouble();
+        System.out.println(a+b);
+        System.out.println(a-b);
+        System.out.println(a*b);
+        System.out.println(a/b);
+        double result=(double)(a+b)*c;
+        System.out.println(c);
+	}
+}
+
+Bitwise Operator Experiment:
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		System.out.println(a&b);
+		System.out.println(a|b);
+		System.out.println(a^b);
+		System.out.println(a>>b);
+		System.out.println(a<<b);
+	}
+}
