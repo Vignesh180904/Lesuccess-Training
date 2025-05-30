@@ -1,3 +1,5 @@
+1. Search for an Element:
+
 import java.util.*;
 public class Main
 {
@@ -19,13 +21,13 @@ public class Main
 	      if(!found){
 	          System.out.println("not found");
 	      }
-	      sc.close();
+	   }
+}
 
 
 
--------------------------------------------------------
 
-
+2.Duplicate Elements:
 
 import java.util.*;
 
@@ -68,8 +70,7 @@ public class FindDuplicates {
     }
 }
 
------------------------------------------------
-
+3.Left Rotation by K Position:
 
 import java.util.*;
 
@@ -104,5 +105,5 @@ public class LeftRotateArray {
         }
     }
 }
----------------------------------
+
 	    
